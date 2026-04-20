@@ -5,6 +5,8 @@ from google.auth.transport.requests import Request
 from google.cloud import bigquery, storage
 from google.cloud import bigquery_storage_v1 as bq_storage
 from google.oauth2.service_account import Credentials
+from google.colab import auth
+from google.auth import default
 
 def get_gc_credential():
     auth.authenticate_user()
