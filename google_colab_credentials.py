@@ -43,19 +43,12 @@ client_params = {
     "bigquery_client": bq_client,
 }
 
-# Call class to implement (assumes ETL/Extract/Load/Transform are imported elsewhere)
-bot_notice = Bot(bot_params)
+# Instantiate Classes
+# Ensure these classes are defined above or imported.
 extract = Extract(client_params)
+transform = Transform(client_params)
 load = Load(
    client_params,
-#    telegram_token=bot_params['telegram']['error_colab']['telegram_token'],
-#    chat_id=bot_params['telegram']['error_colab']['chat_id'],
-#    topic_id=bot_params['telegram']['error_colab']['topic']['operation']  # optional
+   # telegram_token=bot_params['telegram']['error_colab']['telegram_token'],
+   # chat_id=bot_params['telegram']['error_colab']['chat_id'],
 )
-transform = Transform(client_params)
-# ext_load = ExtLoad(
-#     client_params,
-#     telegram_token=bot_params['telegram']['error_colab']['telegram_token'],
-#     chat_id=bot_params['telegram']['error_colab']['chat_id'],
-#     topic_id=bot_params['telegram']['error_colab']['topic']['operation']  # optional
-# )
