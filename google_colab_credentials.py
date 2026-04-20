@@ -1,5 +1,10 @@
 import gspread
 import os
+try:
+    from elt import *
+else:
+    continue
+    
 from google.auth import default
 from google.auth.transport.requests import Request
 from google.cloud import bigquery, storage
