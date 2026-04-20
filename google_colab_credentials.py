@@ -34,6 +34,7 @@ def get_gc_credential():
 #    "gmail": {},
 # }
 
+gc = get_gc_credential()
 bq_client = None
 client_params = {
     "google_client": gc,
