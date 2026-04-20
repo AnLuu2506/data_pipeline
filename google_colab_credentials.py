@@ -15,7 +15,7 @@ def get_gc_credential():
 # bot_params = {
 #    "telegram": {
 #        "error_colab": {
-#            "telegram_token": "7956982873:AAGyWyo38bIyL7vmRlGwalXst28KziWOxdg",
+#            "telegram_token": "7956982873:AAGyWyo38bIyL7vmRlGwalXst28Kzixxxxx",
 #            'chat_id': -1003206692629,
 #            'topic': {'hourly': 2,
 #                        'monthly': 4,
